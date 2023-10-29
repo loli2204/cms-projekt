@@ -1,0 +1,598 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Styla standardlänkar */
+a {
+    color: #273142; /* Byt ut färgen efter ditt val */
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.3s; /* Lägg till en smidig övergång för färgändringar */
+}
+
+/* Länkhovreffekt */
+a:hover {
+    color: #829FD1; /* Byt färg vid hover */
+}
+
+/* Länkhovreffekt för sidofoten (footer) */
+.footer a:hover {
+    color: #829FD1; /* Byt färg vid hover */
+}
+
+/* Header */
+header {
+    background-color: #f7f7f7;
+    padding: 2%;
+    text-align: center;
+}
+
+/* Hela sidans flex-container för att centrera innehåll */
+.page-container {
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Centrera innehåll vertikalt på hela sidan */
+}
+
+.main-content2 {
+    background-color: #273142;
+}
+
+.container {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.header-content {
+    display: flex; /* Visa logon och menyn på en horisontell linje */
+    align-items: center; /* Centrera innehållet vertikalt */
+    justify-content: space-between; 
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Menylänkar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Styla länkarna */
+nav a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+nav a:hover {
+    color: #829FD1; /* Textfärg vid hover */
+}
+
+/* Hero */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.hero h1 {
+    padding-top: 150px;
+    padding-left: 50px;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+.hero2 {
+    background-image: url('images/hero2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    margin-top: 0px;
+    color: #273142;
+}
+
+.hero2 h1 {
+    padding-top: 150px;
+    padding-left: 50px;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.hero2 p {
+    font-size: 13px;
+    padding-left: 50px;
+    margin-bottom: 40px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #829FD1;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.cta-button:hover {
+    background-color: #273142;
+    color: #ffffff;
+}
+
+/* Puffar */
+/* Styla puff-container */
+.puff-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.puff {
+    flex: 1;
+    padding: 10px;
+    background-color: #dfeafe;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    margin: 10px;
+    max-width: 30%;
+}
+
+.puff:hover {
+    transform: translateY(-3px);
+}
+
+.puff h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #273142;
+}
+
+.puff p {
+    font-size: 14px;
+    color: #273142;
+}
+/* Boenden */
+.bo-container {
+    margin-top: 20px;
+}
+
+.bo-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #273142; 
+    text-align: center;
+}
+
+.bo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.bo-item {
+    flex: 1;
+    width: calc(33.33% - 20px); 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.bo-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #273142;
+}
+
+.bo-item p {
+    font-size: 12px;
+    color: #273142; 
+}
+
+.bo-image img {
+    max-width: 100%; /* Begränsa bildens bredd till dess container */
+    height: auto; /* Säkerställ proportionalitet i höjd */
+}
+
+.btn-continue-reading {
+    display: inline-block;
+    padding-top: 40px;
+    padding: 10px 20px;
+    background-color: #829FD1;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-continue-reading:hover {
+    background-color: #273142;
+    color: #ffffff;
+}
+
+/* Widget-område */
+.widget-area {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    color: #273142;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px; 
+    max-width: 1130px; /* Begränsa maximal bredd */
+    margin: 0 auto; /* Centrera widget-området horisontellt */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styla boenden-item */
+.boenden-item {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px; 
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.boenden-item h2 {
+    font-size: 20px; 
+    color: #273142;
+    margin: 0;
+}
+
+.boenden-content {
+    font-size: 14px; 
+    color: #273142;
+    margin-top: 10px;
+}
+
+.boende-image img {
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* footer */
+.footer {
+    background-color: #273142;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5%; 
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #829FD1;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social li {
+    margin: 0 10px;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Font Awesome icons */
+.footer-social a i {
+    font-size: 20px;
+}
+
+/* Anpassa layouten för Aktiviteter-sidan */
+.main-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.activity-content {
+    flex: 1;
+    max-width: 70%;
+    background-color: #273142;
+    padding: 2%;
+}
+
+.activity-sidebar {
+    flex: 1;
+    max-width: 30%;
+    background-color: #ffffff;
+    padding: 2%;
+    border: 1px solid #ccc;
+    font-size: 80%;
+}
+
+.activity-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 80%;
+    border-radius: 5px;
+}
+
+.activity-item h2 {
+    font-size: 16px;
+}
+
+.activity-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    order: 2; /* Ordna bilden till höger */
+    margin-left: 20px; 
+}
+
+/* Anpassa layouten för Nyheter-sidan */
+.main-content3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-content {
+    flex: 1;
+    max-width: 70%;
+    background-color: #273142;
+    padding: 2%;
+}
+
+.news-sidebar {
+    flex: 1;
+    max-width: 30%;
+    background-color: #ffffff;
+    padding: 2%;
+    border: 1px solid #ccc;
+    font-size: 80%;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 80%;
+    border-radius: 5px;
+}
+
+.news-item h2 {
+    font-size: 16px;
+}
+
+.news-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    order: 2; /* Ordna bilden till höger */
+    margin-left: 20px; 
+}
+
+
+/* Stilmall för enskilda nyhetsinlägg */
+body.nyheter-page {
+    background-color: #f4f4f4;
+}
+
+/* Container styles */
+.container-single {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Post meta styles */
+.post-meta {
+    margin-bottom: 20px;
+}
+
+/* Hero image styles */
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Post title styles */
+.post-title {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Post info styles */
+.post-info {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Post content styles */
+.post-content {
+    margin-top: 20px;
+}
+
+/* Related posts styles */
+.related-posts {
+    margin-top: 40px;
+}
+/* Adjust the dimensions of the hero image */
+.hero-image img {
+    max-width: 800px;
+    height: auto;
+}
+/* Styla kontaktsidan med två kolumner */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #273142;
+    flex-wrap: wrap; 
+}
+
+.contact-info, .contact-form {
+    flex-basis: 48%; 
+}
+
+.contact-info {
+    margin-top: 20px;
+    border-radius: 5px;
+    flex-basis: 48%;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Kontaktformulärstil */
+.contact-form {
+    border-radius: 5px;
+    flex-basis: 48%;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #273142;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #829FD1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #273142;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Ändra riktning till staplad på mindre skärmar */
+    }
+
+    .contact-info, .contact-form {
+        flex-basis: 100%; /* Vid mindre skärm, använd hela bredden */
+        margin: 0; /* Ta bort marginaler för att centrera */
+    }
+}
+
+/* Använd mediaförfrågningar för att ändra layout på mindre skärmar */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Byt till staplad layout på mindre skärmar */
+        align-items: center; /* Centrera innehållet vertikalt */
+    }
+
+    .activity-content, .activity-sidebar {
+        flex-basis: 100%; /* Ta hela bredden på mindre skärmar */
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+/* Använd mediaförfrågningar för att ändra layout vid mindre skärmar */
+@media screen and (max-width: 768px) {
+    .news-content {
+        flex-direction: column; /* Byt till staplad layout på mindre skärmar */
+        align-items: center; /* Centrera innehållet vertikalt */
+    }
+
+    .news-content, .news-sidebar {
+        flex-basis: 100%; /* Ta hela bredden på mindre skärmar */
+        margin: 0;
+        max-width: 100%;
+    }
+}
